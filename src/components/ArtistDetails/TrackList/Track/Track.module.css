@@ -1,0 +1,32 @@
+.track {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image {
+    border-radius: calc(var(--base-unit) / 2);
+    height: calc(var(--base-unit) * 5);
+    width: calc(var(--base-unit) * 5);
+    margin-right: calc(var(--base-unit) * 2);
+}
+
+.title {
+    font-size: var(--text-md);
+    line-height: 1.6;
+}
+
+.album {
+    display: block;
+    font-size: var(--text-md);
+    color: var(--color-gray-500);
+    line-height: 1.6;
+}
+
+.duration {
+    color: var(--color-gray-500);
+    font-size: var(--text-md);
+    align-self: center;
+    text-align: right;
+    margin-left: auto;
+}

@@ -1,0 +1,47 @@
+:root {
+    --translate-tile: none;
+}
+
+:global(.main-exit-active).artists {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: transform 0.4s, opacity 0.4s;
+    will-change: transform, opacity;
+}
+
+:global(.main-exit-active).artists {
+    opacity: 0;
+    transform: scale(0.92);
+}
+
+.artists {
+    padding-top: calc(var(--base-unit) * 6);
+    padding-left: calc(var(--base-unit) * 8);
+    padding-right: calc(var(--base-unit) * 8);
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(var(--base-unit) * 24), 1fr));
+    grid-column-gap: calc(var(--base-unit) * 5);
+}
+
+.tile {
+    margin-bottom: calc(var(--base-unit) * 5);
+    cursor: pointer;
+}
+
+.tileSlideIn {
+    animation: tile-move 0.9s var(--easing);
+}
+
+@keyframes tile-move {
+    from {
+        transform-origin: left top;
+        transform: var(--translate-tile);
+    }
+    to {
+        transform-origin: left top;
+    }
+}

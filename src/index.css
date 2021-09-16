@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: var(--text-base-size);
+  color: var(--color-white);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --color-black: #131313;
+  --color-white: #ffffff;
+  --color-background: #191a28;
+  --color-gray-100: #ffffff;
+  --color-gray-200: #dfdfe1;
+  --color-gray-300: #bfbfc4;
+  --color-gray-400: #a0a0a7;
+  --color-gray-500: #83838c;
+  --color-gray-600: #666671;
+  --color-gray-700: #4b4b57;
+  --color-gray-800: #31323f;
+  --color-gray-900: #191a28;
+
+  --text-base-size: 1.2rem;
+  --text-scale-ratio: 1.2;
+
+  --text-xs: calc(var(--text-base-size) / (var(--text-scale-ratio) * 2));
+  --text-sm: calc(var(--text-base-size) / var(--text-scale-ratio));
+  --text-md: var(--text-base-size);
+  --text-lg: calc(var(--text-base-size) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-base-size) * var(--text-scale-ratio) * 2);
+
+  --base-unit: 0.8rem;
+
+  --easing: cubic-bezier(0.19, 1, 0.22, 1);
+}

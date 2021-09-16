@@ -1,0 +1,52 @@
+.container {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - var(--base-unit) * 32);
+    color: var(--color-gray-800);
+    transform-origin: left bottom;
+}
+
+:global(.main-enter) .container {
+    transform: translateY(calc(100vh - 25rem));
+}
+
+:global(.main-enter-active) .container {
+    transform: translateY(0);
+    transition: transform 0.8s var(--easing);
+}
+
+:global(.main-exit-active) .container {
+    transform: translateY(calc(100vh - 15rem));
+    transition: transform 0.8s var(--easing);
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: calc(var(--base-unit) * 2) calc(var(--base-unit) * 2) 0 0;
+    background-color: var(--color-white);
+}
+
+:global(.main-enter) .container::before  {
+    transform: translateY(25rem);
+}
+
+:global(.main-enter-active) .container::before  {
+    transform: translateY(0);
+    transition: transform 1s var(--easing);
+}
+
+.content {
+    position: relative;
+    bottom: calc(var(--base-unit) * 10);
+    padding: 0 calc(var(--base-unit) * 10);
+}
+
+@media screen and (max-width: 76.8rem) {
+    .content {
+        padding: 0 calc(var(--base-unit) * 4);
+    }
+}

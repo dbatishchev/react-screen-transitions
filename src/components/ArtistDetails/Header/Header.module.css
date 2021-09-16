@@ -1,0 +1,121 @@
+:root {
+    --translate-header-image: none;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: calc(var(--base-unit) * 4) calc(var(--base-unit) * 2) calc(var(--base-unit) * 4) calc(var(--base-unit) * 4);
+}
+
+:global(.main-exit) .header {
+    opacity: 0;
+}
+
+.backButton {
+    position: absolute;
+    top: calc(var(--base-unit) * 4);
+    left: calc(var(--base-unit) * 4);
+    z-index: 1;
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(var(--base-unit) * 5);
+    width: calc(var(--base-unit) * 5);
+    border-radius: 50%;
+    background-color: var(--color-gray-800);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    animation: fade-in 1s ease;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.artistDescription {
+    z-index: 1;
+    animation: slide-right 0.9s var(--easing);
+}
+
+.name {
+    font-size: var(--text-xl);
+    font-weight: 700;
+}
+
+.tags {
+    font-size: var(--text-lg);
+    font-weight: 400;
+    color: var(--color-gray-300);
+    margin-top: var(--base-unit);
+}
+
+@keyframes slide-right {
+    from {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+}
+
+.imageWrapper {
+    position: relative;
+    flex-shrink: 0;
+    margin-right: calc(var(--base-unit) * 4);
+    margin-left: calc(var(--base-unit) * 10);
+    transform-origin: left top;
+    will-change: transform;
+    animation: move-image 0.9s var(--easing);
+}
+
+@keyframes move-image {
+    from {
+        transform: var(--translate-header-image);
+    }
+}
+
+.headerImage {
+    width: 24rem;
+    height: 24rem;
+    border-radius: var(--base-unit);
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+@media screen and (max-width: 76.8rem) {
+    .header {
+        margin-bottom: calc(12 * var(--base-unit));
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: calc(var(--base-unit) * 10);
+    }
+
+    .imageWrapper {
+        margin: 0 0 calc(2 * var(--base-unit)) 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headerImage {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .artistDescription {
+        margin-top: calc(var(--base-unit) * 2);
+    }
+
+    .backButton {
+        top: calc(var(--base-unit) * 2);
+        left: calc(var(--base-unit) * 2);
+    }
+}

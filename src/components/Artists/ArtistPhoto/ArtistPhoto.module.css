@@ -1,0 +1,8 @@
+.image {
+    width: calc(var(--base-unit) * 24);
+    height: calc(var(--base-unit) * 24);
+    border-radius: var(--base-unit);
+    vertical-align: bottom;
+    object-fit: cover;
+    background: var(--color-gray-800);
+}

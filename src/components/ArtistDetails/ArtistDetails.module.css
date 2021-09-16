@@ -1,0 +1,11 @@
+:global(.main-exit-active), :global(.main-enter-active) {
+    overflow: hidden;
+    max-height: 100%;
+}
+
+:global(.main-exit-active).container {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
