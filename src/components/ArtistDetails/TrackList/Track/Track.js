@@ -6,7 +6,7 @@ import formatDuration from '../../../../utils/formatDuration';
 export default function Track({ track, className }) {
   return (
     <div className={`${styles.track} ${className}`}>
-      <img className={styles.image} src={track.album.images[2].url} />
+      <img className={styles.image} src={track.album.images[2].url} alt={`${track.name} ${track.album.name}`} />
       <span>
         <span className={styles.title}>{track.name}</span>
         <span className={styles.album}>{track.album.name}</span>

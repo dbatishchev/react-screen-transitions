@@ -13,10 +13,16 @@ function ArtistPhoto({ artist, history, className }) {
     history.push(`/artist/${artist.id}`, { position, artistId: artist.id });
 
     el.style.opacity = 0;
-  }), [artist]);
+  }), [artist, imgRef.current]);
 
   return (
-    <img className={`${styles.image} ${className}`} src={artist.images[0].url} onClick={handleClick} ref={imgRef} />
+    <img
+      className={`${styles.image} ${className}`}
+      src={artist.images[0].url}
+      onClick={handleClick}
+      ref={imgRef}
+      alt={artist.name}
+    />
   );
 }
 
