@@ -28,7 +28,7 @@ if (!token || token === 'null') {
 }
 
 ReactDOM.render((
-  <Router>
+  <Router basename="/react-screen-transitions">
     <App token={token} />
   </Router>
 ), document.getElementById('root'));
