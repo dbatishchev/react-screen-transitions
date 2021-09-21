@@ -9,7 +9,6 @@
     "react-scripts": "4.0.3",
     "react-transition-group": "^4.4.2"
   },
-  "homepage": "https://dbatishchev.github.io/react-screen-transitions",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

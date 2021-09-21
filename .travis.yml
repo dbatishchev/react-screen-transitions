@@ -6,13 +6,12 @@ cache:
     - node_modules
 script:
   - npm run build
-
+before_deploy:
+  - npm install netlify-cli -g
+  - yarn build
 deploy:
-  provider: netlify
-  site: $site_id
-  auth: $netlify_token
-  cleanup: true
-  dir: build
-  prod: true
+  provider: script
+  edge: true
+  script: netlify deploy --dir=build --prod
   on:
     branch: main
