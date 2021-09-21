@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-screen-transitions/static/css/main.f8418fd9.chunk.css",
+    "main.js": "/react-screen-transitions/static/js/main.45573e7a.chunk.js",
+    "main.js.map": "/react-screen-transitions/static/js/main.45573e7a.chunk.js.map",
+    "runtime-main.js": "/react-screen-transitions/static/js/runtime-main.e85140dd.js",
+    "runtime-main.js.map": "/react-screen-transitions/static/js/runtime-main.e85140dd.js.map",
+    "static/js/2.0e432533.chunk.js": "/react-screen-transitions/static/js/2.0e432533.chunk.js",
+    "static/js/2.0e432533.chunk.js.map": "/react-screen-transitions/static/js/2.0e432533.chunk.js.map",
+    "index.html": "/react-screen-transitions/index.html",
+    "static/css/main.f8418fd9.chunk.css.map": "/react-screen-transitions/static/css/main.f8418fd9.chunk.css.map",
+    "static/js/2.0e432533.chunk.js.LICENSE.txt": "/react-screen-transitions/static/js/2.0e432533.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e85140dd.js",
+    "static/js/2.0e432533.chunk.js",
+    "static/css/main.f8418fd9.chunk.css",
+    "static/js/main.45573e7a.chunk.js"
+  ]
+}
