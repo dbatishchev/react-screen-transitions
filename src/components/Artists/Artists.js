@@ -18,7 +18,7 @@ function Artists({ location, artists }) {
 
     const x = -(left - offsetLeft);
     const y = -(top - offsetTop);
-    rootEl.style.setProperty('--translate-tile', `translate(${x}px, ${y}px) scale(1.2632)`);
+    rootEl.style.setProperty('--translate-tile', `translate(${x}px, ${y}px) scale(1.25)`);
 
     if (location.state) {
       window.history.replaceState(null, '');

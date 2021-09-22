@@ -24,7 +24,7 @@ function ArtistDetails({
       const x = left - offsetLeft;
       const y = top - offsetTop;
 
-      document.documentElement.style.setProperty('--translate-header-image', `translate(${x}px, ${y}px) scale(0.792)`);
+      document.documentElement.style.setProperty('--translate-header-image', `translate(${x}px, ${y}px) scale(0.8)`);
     }
   }, []);
 
