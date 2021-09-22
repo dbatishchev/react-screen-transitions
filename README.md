@@ -1,5 +1,5 @@
-[] scale(1.2632) - what is it
-[] store token in memory
+React Hooks + React Router + Spotify API
 
-[] write readme
-[] record the video
+![](docs/demo.gif)
+
+[] store token in memory
