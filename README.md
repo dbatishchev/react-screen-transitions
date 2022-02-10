@@ -1,5 +1,12 @@
-React Hooks + React Router + Spotify API
+# Spotify Artists App
+
+Implementation of smooth animated transitions between pages.
 
 ![](docs/demo.gif)
 
-[] store token in memory
+### Built with
+
+- React
+- React Router
+- React Transition Group
+- CSS Modules
